@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Enfield | Ride Pure</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111;
+    color: white;
+}
+
+header {
+    background: #080808;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #c59d45;
+}
+
+.logo {
+    color: #d6ad56;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+}
+
+nav a:hover {
+    color: #d6ad56;
+}
+
+.hero {
+    height: 480px;
+    background:
+    linear-gradient(#0008,#0009),
+    url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1600")
+    center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8%;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #e0b65c;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.btn {
+    background: #c59d45;
+    color: black;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: bold;
+}
+
+section {
+    padding: 55px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: #d6ad56;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.bikes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #202020;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    color: #d6ad56;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #ccc;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.price {
+    color: #e6bd66;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.about {
+    text-align: center;
+    background: #1c1c1c;
+    line-height: 1.8;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    color: #ccc;
+}
+
+footer {
+    background: #050505;
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+    border-top: 2px solid #c59d45;
+}
+
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav a {
+        margin: 7px;
+        font-size: 13px;
+    }
+    .hero h1 {
+        font-size: 35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">ROYAL ENFIELD</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#bikes">Bikes</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>PURE MOTORCYCLING</h1>
+    <p>Made for the ones who love the open road.</p>
+    <a href="#bikes" class="btn">EXPLORE BIKES</a>
+</div>
+
+<section id="bikes">
+    <h2 class="section-title">OUR MOTORCYCLE COLLECTION</h2>
+
+    <div class="bikes">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=700"
+            alt="Classic motorcycle">
+            <div class="card-content">
+                <h3>Classic 350</h3>
+                <p>Timeless design with a comfortable ride and iconic Royal Enfield styling.</p>
+                <div class="price">₹1.82 Lakh onwards*</div>
+                <p>Engine: 349cc</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=700"
+            alt="Royal Enfield style motorcycle">
+            <div class="card-content">
+                <h3>Bullet 350</h3>
+                <p>A legendary motorcycle known for its classic looks and strong road presence.</p>
+                <div class="price">₹1.62 Lakh onwards*</div>
+                <p>Engine: 349cc</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=700"
+            alt="Adventure motorcycle">
+            <div class="card-content">
+                <h3>Himalayan 450</h3>
+                <p>Adventure touring motorcycle built for highways, mountains and exploration.</p>
+                <div class="price">₹3.06 Lakh onwards*</div>
+                <p>Engine: 452cc</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=700"
+            alt="Cruiser motorcycle">
+            <div class="card-content">
+                <h3>Super Meteor 650</h3>
+                <p>A premium cruiser designed for long-distance rides and relaxed journeys.</p>
+                <div class="price">₹3.68 Lakh onwards*</div>
+                <p>Engine: 648cc</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=700"
+            alt="Hunter style motorcycle">
+            <div class="card-content">
+                <h3>Hunter 350</h3>
+                <p>Modern roadster styling, agile handling and an enjoyable city riding experience.</p>
+                <div class="price">₹1.38 Lakh onwards*</div>
+                <p>Engine: 349cc</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=700"
+            alt="Continental GT style motorcycle">
+            <div class="card-content">
+                <h3>Continental GT 650</h3>
+                <p>A café racer with sporty styling and a powerful twin-cylinder engine.</p>
+                <div class="price">₹3.50 Lakh onwards*</div>
+                <p>Engine: 648cc</p>
+            </div>
+        </div>
+
+    </div>
+    <p style="color:#aaa;margin-top:20px;font-size:13px;">
+        *Illustrative starting prices only. Verify current ex-showroom prices,
+        variants and availability with an authorised dealer.
+    </p>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">ABOUT ROYAL ENFIELD</h2>
+    <p>
+        Royal Enfield is one of the world's oldest motorcycle brands.
+        It is famous for its classic designs, powerful engines and
+        adventurous riding experience. From city roads to mountain
+        adventures, Royal Enfield motorcycles are made for riders
+        who love freedom and exploration.
+    </p>
+</section>
+
+<section id="contact" style="text-align:center;">
+    <h2 class="section-title">RIDE WITH US</h2>
+    <p>Discover your dream motorcycle and start your next adventure.</p>
+    <br>
+    <a href="https://www.royalenfield.com/in/en/" class="btn">
+        VISIT OFFICIAL WEBSITE
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Royal Enfield Motorcycle Showcase</p>
+    <p>Ride Pure. Ride Free.</p>
+</footer>
+
+</body>
+</html>
